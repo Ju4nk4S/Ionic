@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true">
+  
+  <div class="header">
+    <h1>Registrate</h1>
+  </div>
+
+  <form [formGroup]="regForm" novalidate >
+    <div>
+      <ion-item class="item" >
+        <ion-input formControlName="name" placeholder="Nombre" > </ion-input>
+        <ion-icon name="person-outline" > </ion-icon>        
+      </ion-item> 
+      <br>     
+      <ion-item class="item" >
+        <ion-input formControlName="email"  type="email" placeholder="Correo" ></ion-input>
+        <ion-icon name="person-outline" > </ion-icon>
+      </ion-item>
+      <br>
+      <ion-item class="item" >
+        <ion-input formControlName="password"  type="password" placeholder="Contraseña" ></ion-input>
+        <ion-icon name="lock-closed-outline" > </ion-icon>
+      </ion-item>
+      <div class="signup-link" >
+        <p>¿Tienes cuenta? <a routerLink="/login" >ingresa</a></p>
+      </div>
+     
+    </div>
+    <ion-fab vertical="bottom" horizontal="end" >
+      <ion-fab-button routerLink="/home" >
+        <ion-icon name="chevron-forward" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    
+  </form>
+</ion-content>
