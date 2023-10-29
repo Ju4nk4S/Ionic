@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "prueba-bbd7a"
+  },
+  "targets": {
+    "prueba-bbd7a": {
+      "hosting": {
+        "app": [
+          "my-pagina"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
